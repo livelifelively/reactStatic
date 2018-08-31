@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-import { Provider } from 'react-redux';
+import './resources/styles.css';
 
-import Counter from './components/counter/Counter';
-import store from './store';
+import {Header} from './components/header-footer';
 
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <div>
-          <Counter />
-        </div>
-      </Provider>
+      <div>
+        <Header />
+      </div>
     );
   };
 }
